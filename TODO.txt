@@ -19,3 +19,25 @@ GET routes to return a SINGLE User and a SINGLE Thought
 POST routes for Users and Thoughts
 PUT routes for Users and Thoughts
 DELETE routes for Users and Thoughts
+POST routes for a User's FriendList
+DELETE routes for a User's FriendList
+POST routes for Reactions to Thoughts
+DELETE routes for Reactions to Thoughts
+
+Models:
+User
+    *username
+        *String
+        *Unique
+        *Required
+        *Trimmed
+    *email
+        *String
+        *Required
+        *Unique
+        *Must match a valid email address (look into Mongoose's matching validation)
+    *thoughts
+        *array of _id values referencing the Thought model
+    *friends
+        *array of _id values referencing the User model (self-reference)
+        
