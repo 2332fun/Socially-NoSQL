@@ -2,6 +2,8 @@
 
 ## Description
 
+What: My motivation for this project was to make an API for a social network web application where users can share their thoughts, react to friends' thoughts, and create a friend list. My efforts allow the user to connect to a database using Express.js, Mongoose, and MongoDB. When entering the command to invoke the application, the server is started and Insomnia allows the user to see the routes in working order.
+
 * [Link to Webpage](https://2332fun.github.io/Socially-NoSQL/)
 
 ## Table of Contents
@@ -17,7 +19,7 @@
 
 ## Installation
 
-No installation required. Follow the link listed under Usage below or in the Description above.
+MongoDB and Insomnia required to see usage of this API. Follow the link listed under Usage below or in the Description above.
 
 ## Usage
 
@@ -51,7 +53,7 @@ You should have received a copy of the GNU General Public License along with thi
 
 ## Features
 
-
+The user is able to create, update, and delete users and thoughts in the database. The user is able to create and delete reactions to thoughts and add/remove friends from a user's friend list.
 
 ## Contributing
 
