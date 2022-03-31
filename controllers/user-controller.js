@@ -32,6 +32,21 @@ const userController = {
       });
   },
 
+  // get newFriend (posts user as friend to user)
+  // $push can make duplicates, so use $addToSet to not have duplicates
+  newFriend( req, res) {
+    User.findOneAndUpdate({ _id: req.params.id }, {$addToSet: {friends: req.params.friendId}}, {new: true})
+    .then(dbUserData => res.json(dbUserData))
+    .catch(err => res.json(err));
+  },
+
+    // delete friend (findOneAndUpdate to remove friend, instead of findOneAndDelete)
+    deleteFriend({ params }, res) {
+      User.findOneAndUpdate({ _id: params.id }, {$pull: {friends: params.friendId}}, {new: true})
+        .then(dbUserData => res.json(dbUserData))
+        .catch(err => res.json(err));
+    },
+
   // createUser
   createUser({ body }, res) {
     User.create(body)
