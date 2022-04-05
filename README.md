@@ -19,12 +19,14 @@ What: My motivation for this project was to make an API for a social network web
 
 ## Installation
 
-MongoDB and Insomnia required to see usage of this API. Follow the link listed under Usage below or in the Description above.
+MongoDB, node.js and Insomnia required to see usage of this API. Follow the link listed under Usage below or in the Description above.
 
 ## Usage
 
 * [Link to Webpage](https://2332fun.github.io/Socially-NoSQL/)
 ![Screenshot](/assets/images/screenshot.PNG "Screenshot")
+* [Video (part1)](https://drive.google.com/file/d/1m7WyVPwT2DTSb9zBbEBJn0X2IVAvS1u7/view)
+* [Video (part2)](https://drive.google.com/file/d/1qOE_BNuqRcPOTVEYfRSb9L7Xx6uSrssy/view)
 
 ## Credits
 
